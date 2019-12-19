@@ -1,0 +1,223 @@
+#nav{
+    height: 50px;
+}
+.nav-items{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.index{
+    height: 50px;
+    width: calc(100% / 9);
+    margin: 0 15px;
+    line-height: 1.7;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+
+.index:hover{
+    color: rgb(255, 60, 60);
+    text-decoration: none;
+}
+
+.category{
+    height: 50px;
+    width: calc(100% / 9);
+    margin: 0 15px;
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.category:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(170, 170, 170);
+}
+
+.nav-item_write{
+    height: 50px;
+    width: calc(100% / 7);
+    margin: 0 15px;
+    padding-top: 10px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255, 93, 93);
+}
+.nav-item_write:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 93, 93);
+}
+
+.breadcrumb{
+    text-transform: uppercase;
+}
+
+.board-title{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    border-radius: 10%;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 107, 107);
+    margin-bottom: 1rem;
+}
+
+.board{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+
+
+}
+
+.post-block{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3%;
+    padding: 2%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post-block h3.title{
+    color: rgb(112, 112, 112);
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+
+}
+
+.post-block img{
+    width: 100%;
+    height: auto;
+
+}
+
+.post-category{
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    color: rgb(74, 153, 255);
+    cursor: pointer;
+    height: 30px;
+    width:  100px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.post-category:hover{
+    border: 1px solid rgb(74, 153, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 153, 255);
+
+}
+
+
+/*postpanel*/
+#post-panel{
+    display: none;
+    position: fixed;
+    top:15%;
+    left:33%;    
+    background-color: #fff;
+    width: 33%;
+    border: 1px solid rgb(207, 207, 207);
+
+}
+
+#post-panel.open{
+    display: block;
+}
+
+
+#post-panel label{
+    color: rgb(214, 214, 214);
+    font-size: .8rem;
+}
+
+.post-panel-header{
+    text-align: center;
+}
+
+.close{
+    position: relative;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.post-panel-body{
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.post-panel-body{
+    padding: 10px;
+}
+.dropdown-categories{
+    color: rgb(0, 0, 0);
+    width: 25%;
+    
+}
+
+.post-panel-body .title{
+    border: 1px solid rgb(199, 199, 199);
+    width: 100%;
+}
+
+#post-panel textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid rgb(201, 201, 201)
+}
+
+
+
+
+#post-panel button{
+    display: none;
+}
+
+#post-panel button{
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+#post-panel.new button.create,#post-panel.new button.cancel{
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+#post-panel.update button.update,#post-panel.update button.cancel,#post-panel.update button.delete{
+    display: block;
+}
+
+#post-panel.update button.update,#post-panel.update button.cancel{
+    float: left;
+    width: 50%;
+}
+
+#post-panel.update button.delete{
+    width: 100%;
+}
+
+#post-panel button.create,#post-panel button.update{
+    background-color: rgb(59, 212, 148);
+}
+
+#post-panel button.delete{
+    background-color: rgb(255, 89, 125);
+}
